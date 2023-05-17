@@ -1,0 +1,20 @@
+<div class="container">
+  <h2 class="text-center mb-4">Lista de Tareas</h2>
+  
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" [(ngModel)]="nuevaTarea" placeholder="Nueva tarea">
+    <div class="input-group-append">
+      <button class="btn btn-primary" (click)="crearTarea()">Agregar</button>
+    </div>
+  </div>
+  
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let tarea of tareas; let i = index">
+      <div class="d-flex align-items-center">
+        <span class="checkmark"></span>
+        <span>{{ tarea }}</span>
+      </div>
+      <button class="btn btn-danger btn-sm" style="margin-left: auto;" (click)="eliminarTarea(i)">Completo</button>
+    </li>
+  </ul>
+</div>

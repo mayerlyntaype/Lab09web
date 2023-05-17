@@ -1,0 +1,56 @@
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .text-center {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .checkmark {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 2px solid #ced4da;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .checkmark::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background-color: #28a745;
+    border-radius: 50%;
+    display: none;
+  }
+  
+  .list-group-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .list-group-item:hover .checkmark::before {
+    display: block;
+  }
+  
+  .btn-danger {
+    margin-left: 10px;
+  }
+  
